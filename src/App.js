@@ -1,4 +1,5 @@
 import "./App.css";
+import DictionaryForm from "./DictionaryForm";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
               <p style={{ fontSize: "1.5rem" }} className="text-left">
                 Are there enough words in the world?
               </p>
+              <DictionaryForm />
             </div>
           </div>
         </div>
