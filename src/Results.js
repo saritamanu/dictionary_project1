@@ -1,5 +1,6 @@
 import React from "react";
 import "./Results.css";
+import Synonims from "./Synonims";
 
 export default function Results(results) {
   if (!results || !results.results.meanings) {
@@ -17,8 +18,10 @@ export default function Results(results) {
           </p>
           <p> {meaning.definition}</p>
           {meaning.example && <blockquote>"{meaning.example}"</blockquote>}
+          <Synonims synonims={meaning.synonyms} />
         </div>
       ))}
+      {/* <Synonims synonims={results} /> */}
     </div>
   );
 }
