@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "motion/react";
 import "./App.css";
 import DictionaryForm from "./DictionaryForm";
 import Results from "./Results";
@@ -10,17 +11,25 @@ function App() {
       <div className="container-fluid" style={{ height: "100vh" }}>
         <div className="row h-100">
           <div className="col-md-4">
-            <div style={{ marginTop: "10rem", position: "fixed" }}>
-              <h1 style={{ fontSize: "5rem" }}>Dictionary</h1>
-              <p style={{ fontSize: "1.5rem" }} className="text-left">
+            <div
+              className="left-section"
+              style={{ marginTop: "5%", marginRight: "5%" }}
+            >
+              <h1 style={{ fontSize: "3rem", fontFamily: "MyFont" }}>
+                Dictionary
+              </h1>
+              <p
+                style={{ fontSize: "1.5rem", paddingLeft: "5px" }}
+                className="text-left"
+              >
                 Are there enough words in the world?
               </p>
               <DictionaryForm setResults={setResults} />
             </div>
           </div>
 
-          <div className="col-md-8 ">
-            {results && <Results results={results} />}
+          <div style={{ marginTop: "5%" }} className="col-md-7 ">
+            <div>{results && <Results results={results} />}</div>
           </div>
         </div>
       </div>

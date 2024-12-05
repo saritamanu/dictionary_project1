@@ -1,0 +1,46 @@
+
+@font-face {
+    font-family: 'MyFont';
+    src:  url('./fonts/Sugar_Magic.ttf') format('truetype');
+  }
+
+.button-56 {
+  align-items: center;
+  background-color: #fee6e3;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: "MyFont";
+  font-size: 25px;
+  height: 3rem;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.button-56:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+
+
+@media (min-width: 768px) {
+  .button-56 {
+    padding: 0 40px;
+  }
+}

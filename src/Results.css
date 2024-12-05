@@ -4,3 +4,8 @@ blockquote {
     padding: 10px;
     
 }
+
+@font-face {
+    font-family: 'MyFont';
+    src:  url('./fonts/Sugar_Magic.ttf') format('truetype');
+  }

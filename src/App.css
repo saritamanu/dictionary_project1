@@ -1,3 +1,8 @@
+
+@font-face {
+  font-family: 'MyFont';
+  src:  url('./fonts/Sugar_Magic.ttf') format('truetype');
+}
 .App {
   font-family: "Montserrat", sans-serif
 }
@@ -9,3 +14,19 @@
   align-items: center;
   justify-content: center;
 } */
+
+.left-section {
+  margin-top: 5%;
+  margin-right: 5%;
+  position: fixed;
+}
+
+@media (max-width: 768px) {
+  .left-section {
+    position: static; /* Makes it non-fixed */
+    margin-top: 0;
+    margin-right: 0;
+    padding: 1rem; /* Add some spacing for small screens */
+    width: 100%; /* Full width on small screens */
+  }
+}
