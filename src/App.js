@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { motion } from "motion/react";
 import "./App.css";
 import DictionaryForm from "./DictionaryForm";
 import Results from "./Results";
