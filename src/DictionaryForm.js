@@ -22,7 +22,12 @@ export default function DictionaryForm({ setResults }) {
   return (
     <div className="DictionaryForm">
       <form onSubmit={search}>
-        <input type="search" onChange={handleKeywordChange} />
+        <input
+          className="form-control"
+          style={{ width: "100%", height: "3rem", fontSize: "1.5rem" }}
+          type="search"
+          onChange={handleKeywordChange}
+        />
       </form>
     </div>
   );
