@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-export default function DictionaryForm() {
+export default function DictionaryForm({ setResults }) {
   const [keyword, setKeyword] = useState("");
 
   function handleResponse(response) {
+    setResults(response.data);
     console.log(response.data);
   }
   function search(event) {
