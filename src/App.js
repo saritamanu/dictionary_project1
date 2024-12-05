@@ -20,7 +20,7 @@ function App() {
           </div>
 
           <div className="col-md-6 d-flex align-items-center justify-content-center">
-            <Results results={results} /> {/* Pass results */}
+            {results && <Results results={results} />}
           </div>
         </div>
       </div>
