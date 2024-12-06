@@ -32,7 +32,7 @@ export default function Results(results) {
             <p
               style={{
                 marginBottom: "0",
-                color: "#8FB9A8",
+                color: "rgb(0, 128, 128)",
                 fontSize: "1.2rem",
               }}
             >
