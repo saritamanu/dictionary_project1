@@ -21,7 +21,7 @@
   position: fixed;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .left-section {
     position: static; /* Makes it non-fixed */
     margin-top: 0;
@@ -29,4 +29,5 @@
     padding: 1rem; /* Add some spacing for small screens */
     width: 100%; /* Full width on small screens */
   }
+ 
 }

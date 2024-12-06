@@ -3,18 +3,27 @@ import { motion } from "motion/react";
 import "./DictionaryForm.css";
 import axios from "axios";
 
-export default function DictionaryForm({ setResults }) {
+export default function DictionaryForm({ setResults, setPhotos }) {
   const [keyword, setKeyword] = useState("hello");
   const [loaded, setLoaded] = useState(false);
 
-  function handleResponse(response) {
+  function handleResponseDic(response) {
     setResults(response.data);
     console.log(response.data);
+  }
+  function handleResponsePhoto(response) {
+    console.log(response.data);
+    setPhotos(response.data.photos);
   }
   function search() {
     const apiKey = "7a1ob024b4t960f923f458712f6094e1";
     let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
-    axios.get(apiUrl).then(handleResponse);
+    axios.get(apiUrl).then(handleResponseDic);
+
+    const photosApiKey = "7a1ob024b4t960f923f458712f6094e1";
+    const photosApiUrl = `https://api.shecodes.io/images/v1/search?query=${keyword}&key=${photosApiKey}`;
+
+    axios.get(photosApiUrl).then(handleResponsePhoto);
   }
 
   function handleSearch(event) {
@@ -32,7 +41,7 @@ export default function DictionaryForm({ setResults }) {
 
   if (loaded) {
     return (
-      <div className="DictionaryForm">
+      <div className="DictionaryForm row">
         <form
           onSubmit={handleSearch}
           style={{ display: "flex", alignItems: "center", gap: "1rem" }}

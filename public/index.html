@@ -31,8 +31,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Not YOUR Dictionary</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0; /* Remove default margin to prevent gaps */
+      }
+      body {
+        background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+        background-repeat: no-repeat; /* Prevents the gradient from repeating */
+        background-attachment: fixed; /* Ensures the gradient stays fixed */
+        background-size: cover; /* Ensures the gradient stretches to fill the viewport */
+      }
+    </style>
   </head>
-  <body style="background-color: #FAFAFA">
+  <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
