@@ -15,7 +15,7 @@ function App() {
             <div
               className="left-section"
               style={{
-                marginTop: "5%",
+                marginTop: "3%",
                 marginLeft: "3%",
                 display: "flex",
                 flexDirection: "column",
@@ -38,7 +38,7 @@ function App() {
             </div>
           </div>
           <div
-            style={{ marginTop: "3%", paddingRight: "5%" }}
+            style={{ marginTop: "3%", paddingRight: "5%", paddingLeft: "2%" }}
             className="col-md-8"
           >
             {results && <Results results={results} />}
