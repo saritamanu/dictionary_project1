@@ -16,7 +16,7 @@ function App() {
               className="left-section"
               style={{
                 marginTop: "3%",
-                marginLeft: "3%",
+                marginLeft: "5%",
                 display: "flex",
                 flexDirection: "column",
                 gap: "2rem",
